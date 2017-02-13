@@ -11,7 +11,7 @@ class LogStash::Inputs::Azureblob < LogStash::Inputs::Base
   config_name "azureblob"
   milestone 1
 
-  default :codec, "json_lines"
+  default :codec, "line"
 
   config :storage_account_name, :validate => :string
   config :storage_access_key, :validate => :string
